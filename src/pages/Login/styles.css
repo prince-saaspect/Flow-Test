@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .login-heading {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Blinker", sans-serif;
+}
+
+.login-form .login-description {
+  max-width: 775px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  margin-top: 108px;
+}
+
+.login-form-container .input-container {
+  margin-bottom: 27px;
+}
+
+.login-form-container .input-container input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid #696969;
+  height: 40px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  font-family: "Blinker", sans-serif;
+}
+
+.login-form-container .input-container .input-feedback {
+  color: #9c2222;
+  font-size: 14px;
+}
+
+.login-form-container input:focus {
+  outline: none;
+}
+
+.login-form-container .forget-password {
+  font-size: 15px;
+  font-family: "Blinker", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-form-container .login-btn {
+  width: 140px;
+  border: none;
+  background-color: #9c2222;
+  font-family: "Blinker", sans-serif;
+  color: #f1f2f3;
+  font-size: 20px;
+  padding: 5px 0px;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.login-form .login-provider-container {
+  margin-top: 70px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-form .login-provider-container img {
+  height: 40px;
+  width: 40px;
+}
+
+.login-form .signup-content {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Blinker", sans-serif;
+  font-size: 20px;
+}
+
+.login-form .signup-content a {
+  color: #9c2222;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 414px) {
+  .login-form .login-heading {
+    font-size: 25px;
+  }
+
+  .login-form .login-description {
+    max-width: 300px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .login-form-container {
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  .login-form-container .login-btn {
+    width: 140px;
+    margin-top: 30px;
+  }
+
+  .login-form .login-provider-container {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .login-form .login-provider-container img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .login-form .signup-content {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Blinker", sans-serif;
+    font-size: 15px;
+  }
+
+  .login-form .signup-content a {
+    color: #9c2222;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+}

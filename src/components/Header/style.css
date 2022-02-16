@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* colors
+white:#FFFAFA
+grey:#E9E6E6
+brown:#9C2222
+
+fonts
+heading:'Blinker', sans-serif
+body:'Poppins', sans-serif */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffafa;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+header {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: #615f5f;
+}
+
+.mobile-menu i,
+.user-menu a {
+  font-size: 20px;
+  color: #615f5f;
+}
+
+.mobile-menu span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.user-menu a {
+  margin: 0 10px;
+}
+
+.header-main .search {
+  position: relative;
+}
+
+.header-main .search span {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  color: #c4c4c4;
+}
+
+.header-main .search input {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  width: 100%;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 15px 0 25px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.header-main {
+  text-align: center;
+}
+
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+  max-width: 420px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 999;
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+.header-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.header-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header-wrapper .close {
+  display: flex;
+  justify-content: flex-end;
+  color: #615f5f;
+  cursor: pointer;
+}
+
+.header-secondary {
+  margin-top: 40px;
+}
+
+.header-secondary li {
+  margin: 10px 0 0 20px;
+}
+
+.header-secondary a {
+  color: black;
+  font-weight: 600;
+}
+
+.box {
+  margin: 20px 0 20px 30px;
+}
+
+.box h3 {
+  font-size: 16px;
+}
+
+.box li a {
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title span {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .header-wrapper .close,
+  .mobile-menu,
+  .nav-title span {
+    display: none;
+  }
+
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-secondary {
+    margin-top: 0;
+  }
+
+  .header-secondary .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 35px;
+  }
+
+  .nav-list li {
+    margin: 0 20px;
+  }
+
+  .mega-content {
+    position: absolute;
+    display: flex;
+    top: 55px;
+    left: 100px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .box li {
+    margin: 10px 0;
+  }
+
+  .header-wrapper {
+    transform: translateX(0%);
+    position: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: inherit;
+    max-width: inherit;
+    height: inherit;
+  }
+
+  .header-wrapper a {
+    transition: 0.3s ease;
+  }
+
+  .header-wrapper a:hover {
+    color: #9c2222;
+  }
+
+  .mega-dropdown:hover .mega-content {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .search {
+    width: 500px;
+  }
+
+  .box h3 {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}

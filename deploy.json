@@ -1,0 +1,6 @@
+{
+    "deployment_type": "react",
+    "port_number": 3000,
+    "server_name": "beta.truenorthperformance.ca",
+    "server_alias": "beta.truenorthperformance.ca"
+}

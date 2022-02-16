@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form .signup-heading {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Blinker", sans-serif;
+}
+
+.signup-form .signup-description {
+  max-width: 775px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  margin-top: 108px;
+}
+
+.signup-form-container input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid #696969;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Blinker", sans-serif;
+}
+.signup-form-container .input-container {
+  margin-bottom: 27px;
+}
+
+.signup-form-container .input-container .input-feedback {
+  color: #9c2222;
+  font-size: 14px;
+}
+
+.signup-form-container input:focus {
+  outline: none;
+}
+
+.signup-form-container .forget-password {
+  font-size: 15px;
+  font-family: "Blinker", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signup-form-container .login-btn {
+  width: 140px;
+  border: none;
+  background-color: #9c2222;
+  font-family: "Blinker", sans-serif;
+  color: #f1f2f3;
+  font-size: 20px;
+  padding: 5px 0px;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.signup-form .signup-provider-container {
+  margin-top: 70px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.signup-form .signup-provider-container img {
+  height: 40px;
+  width: 40px;
+}
+
+.signup-form .login-content {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Blinker", sans-serif;
+  font-size: 20px;
+}
+
+.signup-form .login-content a {
+  color: #9c2222;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 414px) {
+  .signup-form .signup-heading {
+    font-size: 25px;
+  }
+
+  .signup-form .signup-description {
+    max-width: 300px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .signup-form-container {
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  .signup-form-container .login-btn {
+    width: 140px;
+    margin-top: 30px;
+  }
+
+  .signup-form .signup-provider-container {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .signup-form .signup-provider-container img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .signup-form .login-content {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Blinker", sans-serif;
+    font-size: 15px;
+  }
+
+  .signup-form .login-content a {
+    color: #9c2222;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+}

@@ -33,7 +33,7 @@ const Login = ({ isLoading, isLoggedIn }) => {
   return (
     <div className="login-container">
       <Helmet>
-        <title>Login | Company Name</title>
+        <title>Login | CMS</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, archive" />
         <meta name="canonical" content={window.location.hostname + "/login"} />

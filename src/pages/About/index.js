@@ -9,6 +9,8 @@ const About = () => (
     <Header />
     <div style={{ height: "60vh" }}>
       <h2>About page Data Here</h2>
+      <p>My Branch</p>
+      <p>Testing</p>
     </div>
     <Footer />
   </div>
